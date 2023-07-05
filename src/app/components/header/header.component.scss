@@ -1,0 +1,168 @@
+.HeaderClass{
+    display: flex;
+   align-items: center;
+   height: 62px;
+    margin:0px;
+    border:1px solid rgba(220, 210, 210, 0.963);
+    position:sticky;
+    top: 0;
+    background-color: white;
+}
+.menue{
+    display: flex;
+    align-items: center;
+    height:50px;
+    margin-left: 14px;
+}
+.iconclass{
+    height: 22px;
+    width: 18px;
+}
+.GKeepLogoClass{
+    display: flex;
+    align-items: center;
+    margin:0px;
+    height:50px;
+    margin-left:10px
+}
+.GKeepLogo{
+    height:40px;
+}
+.GKeep{
+   display: flex;
+   align-items: center;
+   margin-top: 0px;
+   height: 50px;
+   margin-left: 8px;
+
+}
+.P_GKeep{
+    display: flex;
+    align-items: center;
+    margin:0px;
+    font-size: 22px;
+    white-space: pre;
+}
+.RightIconsDiv{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    width: 100%;
+    height: 50px;
+    margin-right: 1rem;
+}
+.logoutDiv{
+    text-align: end;
+    width: 100%;
+    position: absolute;
+}
+.logoutButton{
+    margin-right: 0.5rem;
+    height: 2rem;
+    width: 5rem;
+    font-size: medium;
+    border-radius: 0.5rem;
+    border: none;
+    color: darkred;
+    
+}
+.SymbolMargins{
+    margin-right: 20px;
+    // border-radius: 50%;
+}
+.acclogoclass{
+      border-radius: 50%; 
+      height: 32px;
+    width: 32px;
+      
+}
+.searchdiv{
+    display: flex;
+    align-items: center;
+    width: 117rem;
+    margin-left: 9%;
+    height: 2.5rem;
+    /* border-radius: 5% 4% 4% 5%; */
+    border-radius: 2% 2% 2% 2%/27% 27% 27% 27%;
+    background-color: #f1f3f4;
+}
+.searchInput{
+    width: 99%;
+    margin: 0;
+    padding: 0;
+    height: 85%;
+    background-color: #f1f3f4;
+    outline:none;
+    border: none;
+}
+.marginsearch{
+    margin-left: 2%;
+    height: 18px;
+}
+
+mat-sidenav-container{
+    height: 100vh;
+    color:black
+}
+mat-sidenav{
+    width:50px;
+    background-color:white;
+}
+
+/////////////////////////////
+mat-sidenav-container[_ngcontent-ng-c2519754898] {
+    /* height: 100%; */
+    color: black;
+    overflow: hidden;
+    width: 100%;
+}
+// mat-sidenav-container{
+//     height: 100%;
+//     color:black;
+//     overflow: hidden;
+// }
+mat-sidenav{
+    width:100%;
+    // background-color:lightcoral;
+    overflow: hidden;
+   
+    border: none;
+        
+     
+}
+
+.mat-drawer-inner-container::-webkit-scrollbar {
+    display: none;
+}
+.Rowflex{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    width: 200px;
+    height: 3rem;
+}
+
+.sidenav-notes-container{
+    display: flex;
+ width:20%;
+ position: absolute;
+}
+
+mat-sidenav-container[_ngcontent-ng-c2015111067] {
+    /* height: 100vh; */
+    color: black;
+    width: 283px;
+    border: 1px solid black;
+}
+.hoverClass:hover {
+background-color:rgba(0,0,0,.2);
+
+border-radius: 0% 15% 15% 0%/0% 50% 50% 0%;
+}
+
+.iconHover:hover{
+
+border-radius: 50%;
+cursor: pointer;
+background-color:rgba(0,0,0,.2);
+}

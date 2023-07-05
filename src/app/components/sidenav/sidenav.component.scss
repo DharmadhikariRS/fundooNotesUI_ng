@@ -1,0 +1,24 @@
+mat-sidenav-container{
+    height: 100%;
+    color:black;
+    overflow: hidden;
+}
+mat-sidenav{
+    width:100%;
+    // background-color:lightcoral;
+    overflow: hidden;
+   
+    border: none;
+        
+     
+}
+
+.mat-drawer-inner-container::-webkit-scrollbar {
+    display: none;
+}
+.Rowflex{
+    display: flex;
+    align-items: center;
+    
+    width: 200px;
+}

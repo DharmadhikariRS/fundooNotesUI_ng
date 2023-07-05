@@ -1,0 +1,92 @@
+<div class=HeaderClass>
+    <div class="menue" (click)="setToggle()">
+        <!-- <img class=" iconclass" src="../../../assets/hamburgerSymbol.png" alt="Logo" /> -->
+        <mat-icon>menu</mat-icon>
+    </div>
+    <div class="GKeepLogoClass">
+      <img class="GKeepLogo" src="../../../assets/GoogleKeepLogo.png" alt="Logo" />
+    </div>
+    <div class="GKeep">
+      <span class="P_GKeep">{{headerValue}}</span>
+    </div>
+    <div class="searchdiv">
+        <img class="iconclass marginsearch" src="../../../assets/searchSymbol.jpg" alt="AccLogo" />
+        <input class="searchInput marginsearch" type="text" placeholder="Search" [(ngModel)]="searchedTitle" (ngModelChange)="searchedTitle=setSearch()"/>
+    </div>
+    <div class="RightIconsDiv">
+        <!-- <RefreshIcon className="SymbolMargins" /> -->
+        <!-- <img class="SymbolMargins iconclass" src="../../../assets/reverseSymbol.png" alt="AccLogo" /> -->
+        <mat-icon  class="SymbolMargins">refresh</mat-icon>
+        <!-- <ViewStreamIcon className="SymbolMargins" /> -->
+        <!-- <img class="SymbolMargins iconclass" src="../../../assets/menu symbol list.png" alt="AccLogo" /> -->
+        <mat-icon  class="SymbolMargins" fontSet="material-icons-outlined">
+          view_agenda
+          </mat-icon>
+        <!-- <SettingsIcon className="SymbolMargins" /> -->
+        <!-- <img class="SymbolMargins iconclass" src="../../../assets/settingSymbol.png" alt="AccLogo" /> -->
+        <mat-icon  class="SymbolMargins" fontSet="material-icons-outlined">
+          settings
+          </mat-icon>
+        <!-- <AppsIcon className="SymbolMargins" /> -->
+        <!-- <img class="SymbolMargins iconclass" src="../../../assets/appsSymbol.png" alt="AccLogo" /> -->
+        <mat-icon  class="SymbolMargins" fontSet="material-icons-outlined">
+          apps
+          </mat-icon>
+        <img class="SymbolMargins iconclass acclogoclass" src="../../../assets/AccLogo.png" alt="AccLogo" (click)="setLogoutToggle()" />
+      </div>
+      
+ </div>
+ <div class="logoutDiv" *ngIf="logout"><button class="logoutButton" (click)="logoutFn()">Logout</button></div>
+
+
+ <div class="sidenav-notes-container">
+<div style="width: 100%;">
+<!-- <app-sidenav></app-sidenav> -->
+<mat-sidenav-container (scroll)="onSideNavScroll($event)"> 
+  <mat-sidenav #sidenav opened mode="side">
+    <mat-nav-list>
+      <div  class="Rowflex " [ngClass]="toggle?'hoverClass':''"(click)="setNotes()">
+      <mat-icon [ngClass]="toggle?'':'iconHover'" (click)="setToggle()">
+lightbulb_outline  
+</mat-icon>
+<a *ngIf="toggle" mat-list-item >Notes</a>
+
+</div>
+<div   class="Rowflex"  [ngClass]="toggle?'hoverClass':''">
+<mat-icon  [ngClass]="toggle?'':'iconHover'" (click)="setToggle()">
+notifications_none
+</mat-icon>  
+      <a *ngIf="toggle" mat-list-item>Reminder</a>
+    </div>
+    <div   class="Rowflex" [ngClass]="toggle?'hoverClass':''" >
+      <mat-icon fontSet="material-icons-outlined"  [ngClass]="toggle?'':'iconHover'" (click)="setToggle()">
+
+
+        mode_edit_outline
+        </mat-icon>  
+      <a *ngIf="toggle" mat-list-item >Edit labels</a>
+      </div>
+      <div   class="Rowflex"  [ngClass]="toggle?'hoverClass':''" >
+        <mat-icon fontSet="material-icons-outlined"  [ngClass]="toggle?'':'iconHover'" (click)="setToggle()">
+          archive
+          </mat-icon>  
+      <a *ngIf="toggle" mat-list-item (click)="setArchive()">Archive</a></div>
+      <div   class="Rowflex"  [ngClass]="toggle?'hoverClass':''">
+        <mat-icon  [ngClass]="toggle?'':'iconHover'" (click)="setToggle()">
+          delete_outline
+          </mat-icon> 
+       <a *ngIf="toggle" mat-list-item (click)="setTrash()">Bean</a>
+      </div>
+    </mat-nav-list>
+    <mat-sidenav-content>
+      <!-- <div style="height:88vh">
+      HI
+    </div> -->
+    </mat-sidenav-content>
+  </mat-sidenav>
+  </mat-sidenav-container>
+ </div>
+ <div>
+  </div>
+
+ </div>

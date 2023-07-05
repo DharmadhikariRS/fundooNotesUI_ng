@@ -1,0 +1,37 @@
+<div class="signin-container">
+    <img src="../../../assets/Googlelogo.png" alt="logo" class="logo" />
+    <div class="signinFirst">
+      <p class="pSignin">Sign in</p>
+    </div>
+    <form  [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="inputclass">
+        <mat-form-field appearance="outline" class="classInput">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Placeholder"  name="email" formControlName="email" >
+            <mat-error *ngIf="submitted && f['email'].errors"> email is required
+            </mat-error>
+          </mat-form-field>
+          <a class="forgot" href="#">
+            Forgot Email?
+          </a>
+          <mat-form-field appearance="outline" class="classInput" >
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Placeholder"  name="password" formControlName="password">
+            <mat-error *ngIf="submitted && f['password'].errors"> need strong password,with caps,char,numbers
+           </mat-error>
+          </mat-form-field>
+          <a class="forgot" href="#">
+            Forgot password?
+          </a>
+          <div class="Create-Account">
+            <a href="#">Create Account</a>
+            <button  class="Buttonclass" >
+              <!-- <a href="#" onClick={validate}>
+                Login
+              </a> -->
+              Login
+            </button>
+          </div>
+        </div>
+    </form>
+    </div>

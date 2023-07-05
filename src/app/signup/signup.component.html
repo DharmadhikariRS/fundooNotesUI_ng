@@ -1,0 +1,69 @@
+<div class="Main-Container">
+    <div class="ContainerFirst">
+      <div class="logoclass">
+        <img src="../../assets/Googlelogo.png"alt="logo" class="logo1" />
+      </div>
+      <p class="Pclass">Create your Google account</p>
+      <form  [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="flexDiv">
+
+      
+        <mat-form-field appearance="outline" class="signup-input">
+            <mat-label>Firstname</mat-label>
+            <input matInput placeholder="Placeholder"  name="firstName" formControlName="firstName">
+            <mat-error *ngIf="submitted && f['firstName'].errors?.['required']"> Firstname is required
+            
+            </mat-error>
+            <mat-error *ngIf="submitted && f['firstName'].errors?.['pattern']"> First letter needs capital
+           </mat-error>
+        
+          </mat-form-field>
+          <mat-form-field appearance="outline"  class="signup-input">
+            <mat-label>Lastname</mat-label>
+            <input matInput placeholder="Placeholder"  name="lastName" formControlName="lastName">
+            <mat-error *ngIf="submitted && f['lastName'].errors"> LastName is required
+            </mat-error>
+          </mat-form-field>
+      </div>
+      <div class="EmailInput">
+      <mat-form-field appearance="outline" class="EmailInputTag">
+        <mat-label>Mail</mat-label>
+        <input matInput placeholder="Placeholder"  name="email" formControlName="email">
+        <mat-error *ngIf="submitted && f['email'].errors"> Email is required
+        </mat-error>
+      </mat-form-field>
+      
+      </div>
+      <div class="flexDiv">
+        <mat-form-field appearance="outline"  class="signup-input">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Placeholder"  name="password" formControlName="password">
+        <mat-error *ngIf="submitted && f['password'].errors?.['required']"> Password is required
+        </mat-error>
+        <mat-error *ngIf="submitted && f['password'].errors?.['pattern']">letter,symbol,number required
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline"  class="signup-input">
+        <mat-label>Confirm password</mat-label>
+        <input matInput placeholder="Placeholder"  name="confirmPassword" formControlName="confirmPassword">
+        <mat-error *ngIf="submitted && f['confirmPassword'].errors">Please confirm password
+        </mat-error>
+      </mat-form-field>
+      </div>
+
+   
+      <div class="SignIn">
+        <a href="#">Sign in instead</a>
+        <!-- <button type="submit" class="ButtonCreate" (click)="setValue()">
+          <a href="#" class="ButtonCreate-a">
+            Create
+          </a>
+        </button> -->
+        <button class="ButtonCreate">Create</button>
+      </div>
+    </form>
+    </div>
+    <div class="containerSecond">
+        <img class="acclogo" src="../../assets/Googleaccount.svg" alt="acclogo" />
+      </div>
+<div>

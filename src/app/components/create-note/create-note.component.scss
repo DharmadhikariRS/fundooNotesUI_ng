@@ -1,0 +1,121 @@
+.TakeNote1{
+    display: flex;
+    align-items: center;
+    margin:0px;
+    padding: 0px;
+    margin-top: 50px;
+    height:44px;
+    width:40%;
+    border:1px solid rgb(238, 234, 234);
+    border-radius: 8px;
+    box-shadow: 2px 2px #e0e0e0;
+}
+.TakeNote1Position{
+    margin-left: 30%;
+}
+.TakeNote2Input {
+    margin: 0px;
+    height: 38px;
+    width: 100%;
+    border: 0px;
+    padding: 5px 15px;
+    font-size: 17px;
+    margin-left: 3px;
+    box-sizing: border-box;
+    outline:none;
+    border-radius: 8px;
+    margin-left: 0px;
+  }
+  .NoteIconDiv{
+    display: flex;
+}
+.Note1SymbolDiv{
+    margin-right: 20px;
+    border-radius: 50%;
+    color:grey;
+    height: 26px;
+    width: 24px;
+}
+.TakeNote2 {
+    display: flex;
+    flex-direction: column;
+  
+    align-items: flex-start;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 50px;
+    width: 40%;
+    border: 3px solid rgb(238, 234, 234);
+    border-radius: 8px;
+    box-shadow: 1px 1px #e0e0e0;
+  }
+  .TakeNote2Input {
+    margin: 0px;
+    height: 38px;
+    width: 100%;
+    border: 0px;
+    padding: 5px 15px;
+    font-size: 17px;
+    margin-left: 3px;
+    box-sizing: border-box;
+    outline:none;
+    border-radius: 8px;
+    margin-left: 0px;
+  }
+  .Note2Symbolmaincontainer{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin-top: 6px;
+      margin-bottom: 4px;
+  
+  }
+  .Note2SymbolDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    color:grey;
+    justify-content: space-between;
+    margin-left: 2%;
+  }
+  .Note2Symbols {
+    /* margin-left: 26px; */
+    height: 25px;
+    width: 25px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .close-btn{
+    padding: 3px 15px;
+    margin: 0px 15px;
+    /* border-radius: 10px; */
+    /* border: 1px solid rgb(209, 206, 206); */
+    height: 22px;
+    font-size: 14px;
+    background: none;
+    border: none;
+    font-size: large;
+    color: grey;
+}
+  
+  .TakeNote2Position{
+    margin-left: 30%;
+  }
+  .allNotesFlex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20%;
+  }
+  .archiveDiv{
+    margin:0px;
+    padding:0px;
+    display: flex;
+    align-items: center;
+  }
+  .formclass{
+    width:100%
+  }

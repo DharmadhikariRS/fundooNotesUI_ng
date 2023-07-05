@@ -1,0 +1,70 @@
+<div class="TakeNote2 TakeNote2Position" >
+  <!-- <form> -->
+
+    <form class="formclass"   [formGroup]="notesForm" >
+    <input
+      type="text"
+      name="title"
+      class="TakeNote2Input"
+      
+      placeholder="Title"
+      formControlName="title"
+    />
+    <input
+      type="text"
+      name="description"
+     class="TakeNote2Input"
+      placeholder="Take a note"
+      formControlName="description"
+    />
+  <!-- </form> -->
+    <!-- <mat-form-field appearance="outline"    class="TakeNote2Input">
+      <mat-label>Title</mat-label>
+      <input matInput placeholder="Placeholder"  name="lastName">
+     
+    </mat-form-field>
+
+    <mat-form-field appearance="outline"   class="TakeNote2Input">
+      <mat-label>Description</mat-label>
+      <input matInput placeholder="Placeholder"  name="lastName" >
+      
+    </mat-form-field> -->
+
+    <div class="Note2Symbolmaincontainer">
+        <div class="Note2SymbolDiv">
+          <img src="../../../assets/bellSymbol.PNG" fontSize="small" class="Note2Symbols" />
+          <img  src="../../../assets/personSymbol.PNG"
+            fontSize="small"
+            class="Note2Symbols"
+          />
+      
+          <img  src="../../../assets/colorSymbol.PNG"note={notes} />
+          <img src="../../../assets/gallerySymbol.PNG"
+            fontSize="small"
+            class="Note2Symbols"
+          />
+          <div class="archiveDiv">
+            <img
+            src="../../../assets/archiveSymbol.PNG"
+              fontSize="small"
+              class="Note2Symbols"
+            />
+          </div>
+          <img
+          src="../../../assets/threeDotsSymbol.PNG"
+            fontSize="medium"
+            class="Note2Symbols"
+          />
+          <img src="../../../assets/reversebackSymbol.PNG" fontSize="small" class="Note2Symbols" />
+          <img src="../../../assets/reverseNextSymbyol.PNG" fontSize="small" class="Note2Symbols" />
+        </div>
+        
+      </div>
+    </form>
+    <button class="close-btn" (click)="setData()">
+      <!-- <a href="#" onClick={CreateNote}> -->
+        close
+      <!-- </a> -->
+    </button>
+    </div>
+    <!-- <app-create-note *ngIf="toggle"></app-create-note> -->

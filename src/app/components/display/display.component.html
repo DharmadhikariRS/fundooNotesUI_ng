@@ -1,0 +1,31 @@
+<div class="allNotesFlex">
+<div class=TakeNote3 *ngFor="let arr of ChildMessage" [style.background]="arr.color"  [style.border-radius]="8">
+        <div [style.background]="arr.color" class="takenote3InnerDiv">
+          <input
+            type="text"
+            class="TakeNote3Input"
+            name="title"
+            placeholder="Title"
+            value={{arr.title}}
+            readOnly
+            (click)="openDialog({arr})"
+            [style.background]="arr.color"
+            [style.border-radius]="8"
+          />
+          <input
+            id="autoresizing"
+            type="text"
+            class="TakeNote3Input"
+            placeholder="Take a note"
+            name="description"
+            value={{arr.description}}
+            readOnly
+            (click)="openDialog({arr})"
+            [style.background]="arr.color"
+            [style.border-radius]="8"
+          />
+          <app-icons [note]="arr"  [style.background]="arr.color"></app-icons>
+          </div>
+ </div>
+
+ 

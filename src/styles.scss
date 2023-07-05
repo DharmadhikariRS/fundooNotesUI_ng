@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-drawer-container::-webkit-scrollbar {
+    width: 20%;
+}
+.mat-drawer-container::-webkit-scrollbar {
+    width: 200px;
+}
+.mat-drawer-inner-container::-webkit-scrollbar {
+    display: none;
+}
+mat-sidenav-container{
+    width:20%;
+    height: 100vh;
+}
+mat-sidenav-container[_ngcontent-ng-c2519754898] {
+    /* height: 100%; */
+    color: black;
+    overflow: hidden;
+  
+}
+.mat-drawer-container{
+    width: 100%;
+}
+
+.mat-mdc-menu-panel.mat-mdc-menu-panel {
+    /* min-width: 112px; */
+    /* max-width: 280px; */
+    /* overflow: auto; */
+    max-width: 400px !important;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    top: 1rem !important;
+    left: -8.5rem !important;
+}
+
+.mat-mdc-list-item:hover {
+    background-color:rgba(0,0,0,0) !important;
+
+    border-radius: 0% 15% 15% 0%/0% 50% 50% 0% !important;
+}

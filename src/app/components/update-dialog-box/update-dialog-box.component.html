@@ -1,0 +1,33 @@
+
+<div class="TakeNote2 TakeNote2Position" >     
+      <input
+        type="text"
+        name="title"
+        class="TakeNote2Input"
+        
+        placeholder="Title"
+      value={{title}}
+        [(ngModel)]="title"
+      />
+      <input
+        type="text"
+        name="description"
+        value={{description}}
+       class="TakeNote2Input"
+        placeholder="Take a note"
+        [(ngModel)]="description"
+      />
+      <div class="symbolsCloseBtn">
+      <div class="modalSymbols">
+      <app-icons></app-icons>
+    </div>
+      <div class="buttonDiv">
+        <button class="closeUpdate" (click)="onNoClick()">
+          Close
+        </button>
+      </div>
+    </div>
+      </div>
+      <!-- <p>
+        Hi inside dialog
+      </p> -->

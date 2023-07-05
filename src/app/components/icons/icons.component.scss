@@ -1,0 +1,32 @@
+.Note3SymbolDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 4px;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  .Note3Symbols {
+    
+    color: grey;
+    border:0px;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+  }
+  .deleteDiv{
+    padding: 19px;
+    margin-left: 14rem;
+    /* width: 1rem; */
+    border: 1px solid grey;
+    position: relative;
+    top: 20rem;
+    left: 18rem;
+    box-shadow: 2px 2px #e0e0e0;
+    background-color: white;
+    text-align: center;
+    /* padding: 3%; */
+    font-size: large;
+    position: absolute;
+  }
